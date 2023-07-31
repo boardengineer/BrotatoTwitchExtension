@@ -1,11 +1,15 @@
 <script>
+	import { tooltip } from './../../tooltip';
+
 	export let img_src = '';
 	export let img_alt = '';
 	export let tier = '';
+	export let id = '';
+	export let name = '';
 </script>
 
 <div class="item bg_{tier}">
-	<img src={img_alt !== '' ? img_src : '/static/blob.png'} alt={img_alt} />
+	<img title="{name}" use:tooltip src={img_alt !== '' ? img_src : '/static/blob.png'} alt={img_alt} />
 </div>
 
 <style>

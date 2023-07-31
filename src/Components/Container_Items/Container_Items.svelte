@@ -20,6 +20,8 @@
 						img_src={get_icon_path(item.id)}
 						img_alt={get_translated_string(data_translations, item.id, 'en')}
 						tier={item.tier}
+						id={item.id}
+						name={get_translated_string(data_translations, item.id, 'en')}
 					/>
 				{/each}
 			{/if}
